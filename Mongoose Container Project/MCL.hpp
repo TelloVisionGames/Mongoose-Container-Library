@@ -2,9 +2,7 @@
 
 namespace MCL
 {
-	namespace Containers {
-
-	#pragma region ADT Bag
+	namespace Bag {
 
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 		// :::::::::::::::::::::::::::::::::::::::::::: ADT Bag ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -12,8 +10,6 @@ namespace MCL
 		//	- A finite number of objects, not necessarily distinct, in no particular order, and having the same data type. 
 		//	- The number of objects in this collection.                                                                    
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-		// 
-		// !!! OPERATIONS !!!
 		// 
 		//	getCurrentSize()			
 		//					Task: Reports the current number of objects in this bag.
@@ -50,11 +46,12 @@ namespace MCL
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-		class Array_Bag;					// Bag ADT implemented with an array back-end
-		class Linked_Bag;					// Bag ADT implemented with a link-based back-end
+		class Array_Bag;					// Bag ADT as defined above, with an Array as the back-end container
+		class Linked_Bag;					// Bag ADT as defined above, with Link-Based back-end container
 
-#pragma endregion ADT Bag
-	#pragma region ADT List
+
+	}
+	namespace List {
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 		// :::::::::::::::::::::::::::::: Sorted List :: ADT :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -84,9 +81,11 @@ namespace MCL
 		//	::	clear()
 		//	::	getEntry(position)
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-		class Array_List;
-		class Linked_List;
-#pragma endregion ADT List
+		
+		class Array_List;				// List as described above, implemented with an Array 
+		class Linked_List;				// List as described above, implemented with a link-based container.
+	}
+
 	#pragma region ADT Stack
 
 		// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
